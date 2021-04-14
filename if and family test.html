@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="Name"> enter your name</h1>
+    name1 <input type="text" id="name1"><br>
+    name2 <input type="text" id="name2"><br>
+    <input type="button" id="getname" onclick="fullname()" value="click">
+
+    <script>
+
+
+
+        function fullname() {
+            var allname1 = document.getElementById("name1").value;
+            var allname2 = document.getElementById("name2").value;
+            var fname = allname1 + allname2; 
+             
+            if (fname === "alirezaabadi") {
+                document.getElementById("Name").innerHTML = "pesar bozorg";
+            } else if (fname === "maman") {
+                document.getElementById("Name").innerHTML = " madar";
+            } else if (fname === "yasin") {
+                document.getElementById("Name").innerHTML = " pesarkochak";
+            } else if (fname === "baba") {
+                document.getElementById("Name").innerHTML = " pedar";
+            } else {
+                alert("not your family")
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input">
+    <input type="submit" value="sumbit" onClick="myfunction()">
+    <p id="p"></p>
+
+
+
+
+
+
+
+
+    <script>
+        function myfunction() {
+            x = document.getElementById("input").value;
+            if (x == "") {
+                document.getElementById("p").innerHTML = "cant empity";
+                document.getElementById("p").style.color = " red";
+            } else {
+                document.getElementById("p").innerHTML = " its good";
+                document.getElementById("p").style.color = "green";
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

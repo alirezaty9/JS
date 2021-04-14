@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        function sumOrProduct(operation, ...numbers) {
+            let result;
+            if (operation === 'sum') {
+                result = 0;
+                for (let number of numbers) {
+                    result += number;
+                }                                  //بر اساس تعداد ورودی هایی که کاربر وارد میکنه
+            } else if (operation === 'product') {
+                result = 1;
+                for (let number of numbers) {
+                    result *= number;
+                }
+            }
+            return result;
+        }
+
+
+    </script>
+</body>
+
+</html>

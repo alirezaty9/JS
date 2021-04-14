@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function mean() {
+            let average, total = 0;
+            for (let number of arguments) {
+                total += number;                          //بر اساس تعداد ورودی هایی که کاربر وارد میکنه
+            }
+            average = total / arguments.length;
+            return average;
+        }
+    </script>
+</body>
+</html>
